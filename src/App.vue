@@ -1,10 +1,20 @@
 <template>
   <div>
-    sssss
+    <Tarbar></Tarbar>
+    <router-view/>
   </div>
-  <router-view/>
 </template>
 
+<script>
+  import Tarbar from './components/common/tabbar/Tarbar'
+  export default {
+    name:'App',
+    components:{
+      Tarbar
+    }
+  }
+
+</script>
 <style>
   @import "assets/css/bace.css";
 </style>
