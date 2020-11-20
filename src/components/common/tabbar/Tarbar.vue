@@ -12,7 +12,7 @@
       </template>
     </TarBarItem>
 
-    <TarBarItem path="/category" active-color="red">
+    <TarBarItem path="/category/pop" active-color="red">
       <template v-slot:slot-img>
         <img src="@/assets/img/2.png" alt="">
       </template>

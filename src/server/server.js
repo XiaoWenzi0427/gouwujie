@@ -74,6 +74,51 @@ app.get('/category/category',function (req,res) {
   })
 
 })
+app.get('/category/pops',function (req,res) {
+  fs.readFile('./data/categorydata/subcategoryZhengZaiLiuXing.json',function (err,data) {
+    if (err){
+      return res.send('cuowu')
+    }
+    res.send(JSON.parse(data))
+  })
+
+})
+app.get('/category/kuzis',function (req,res) {
+  fs.readFile('./data/categorydata/subcategoryKuZi.json',function (err,data) {
+    if (err){
+      return res.send('cuowu')
+    }
+    res.send(JSON.parse(data))
+  })
+
+})
+app.get('/category/neiyis',function (req,res) {
+  fs.readFile('./data/categorydata/subcategoryNeiYi.json',function (err,data) {
+    if (err){
+      return res.send('cuowu')
+    }
+    res.send(JSON.parse(data))
+  })
+
+})
+app.get('/category/qunzis',function (req,res) {
+  fs.readFile('./data/categorydata/subcategoryQunZi.json',function (err,data) {
+    if (err){
+      return res.send('cuowu')
+    }
+    res.send(JSON.parse(data))
+  })
+
+})
+app.get('/category/shangyis',function (req,res) {
+  fs.readFile('./data/categorydata/subcategoryShangYi.json',function (err,data) {
+    if (err){
+      return res.send('cuowu')
+    }
+    res.send(JSON.parse(data))
+  })
+
+})
 
 app.listen(8000,function () {
   console.log("Running……")

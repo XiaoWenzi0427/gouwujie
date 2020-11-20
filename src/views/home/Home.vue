@@ -12,6 +12,9 @@
     </div>
     <div>
       <router-view></router-view>
+      <div>&nbsp;</div>
+      <div>&nbsp;</div>
+      <div>&nbsp;</div>
     </div>
   </div>
 </template>
