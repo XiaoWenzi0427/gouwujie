@@ -1,7 +1,7 @@
 <template>
   <div>
-    <Tarbar></Tarbar>
     <router-view/>
+    <Tarbar></Tarbar>
   </div>
 </template>
 

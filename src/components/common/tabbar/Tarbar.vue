@@ -1,6 +1,6 @@
 <template>
   <div id="tabbar">
-    <TarBarItem path="/home" active-color="red">
+    <TarBarItem path="/home/pop" active-color="red">
       <template v-slot:slot-img>
         <img src="@/assets/img/2.png" alt="">
       </template>
@@ -12,7 +12,7 @@
       </template>
     </TarBarItem>
 
-    <TarBarItem path="/cart" active-color="red">
+    <TarBarItem path="/category" active-color="red">
       <template v-slot:slot-img>
         <img src="@/assets/img/2.png" alt="">
       </template>
@@ -24,7 +24,7 @@
       </template>
     </TarBarItem>
 
-    <TarBarItem path="/category" active-color="red">
+    <TarBarItem path="/shopcart" active-color="red">
       <template v-slot:slot-img>
         <img src="@/assets/img/2.png" alt="">
       </template>
@@ -56,6 +56,7 @@
   import TarBarItem from './Tar-bar-item';
   export default {
     name: "Tarbar",
+
     components:{
       TarBarItem
     }
@@ -65,7 +66,7 @@
 <style scoped>
   /*@import "../../assets/css/base.css";*/
   #tabbar{
-    width: 100%;
+    width: 100vw;
     position: fixed;
     bottom: 0;
     display: flex;
@@ -76,6 +77,7 @@
   /*.tab-bar-item{*/
   /*  height: 49px;*/
   /*}*/
+
   .tab-bar-item img{
     height: 24px;
     width: 24px;
